@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .center {
+                text-align: center;
+            }
+            .millisDisplay {
+                font-size: 24px;
+                text-align: center;
+            }
+            .credit {
+                position: fixed;
+                font-size: 14px;
+                bottom: 0;
+            }
+        </style>
+        <title id="title">milliseconds till</title>
+    </head>
+    <body>
+        <script>
+            
+            const targetMillis = 1647053021000;
+             setInterval(function(){
+                document.getElementById("milliseconds").innerHTML = targetMillis - Date.now()
+                document.getElementById("title").innerHTML = targetMillis - Date.now() + " milliseconds until they get here!"
+             }, 1);
+        </script>
+        <h1 class="center">Milliseconds until they get here!</h1>
+        <p class="millisDisplay" id=milliseconds></p>
+        <p class="credit">Made by jek kelm</p>
+    </body>
