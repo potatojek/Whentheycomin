@@ -20,13 +20,17 @@
     <body>
         <script>
             
-            const targetMillis = 1647053021000;
+            const targetMillis = 1647640532000;
+            const targetMillis2 = 1648245332000;
              setInterval(function(){
                 document.getElementById("milliseconds").innerHTML = targetMillis - Date.now()
+                document.getElementById("milliseconds2").innerHTML = targetMillis2 - Date.now()
                 document.getElementById("title").innerHTML = targetMillis - Date.now() + " milliseconds until they get here!"
              }, 1);
         </script>
         <h1 class="center">Milliseconds until they get here!</h1>
         <p class="millisDisplay" id=milliseconds></p>
+        <h3>or</h3>
+        <p class="millisDisplay" id=milliseconds2></p>
         <p class="credit">Made by jek</p>
     </body>
